@@ -1,5 +1,5 @@
 <!--
-此文件为开发者工具生成，生成时间: 2020/6/19 下午5:03:45 
+此文件为开发者工具生成，生成时间: 2020/6/19 下午5:28:01 
 使用方法：
 在 pages/nav/nav.wxml 引入模板
 
@@ -17,92 +17,98 @@
 -->
 <template name="skeleton">
   <view class="sk-container">
-    <scroll-view scroll-with-animation="true" scroll-x="true" class="bg-white nav" scroll-left="0">
-      <view class="cu-item sk-transparent sk-text-34-4444-604 sk-text" data-id="0">
-        院系
-      </view>
-      <view class="cu-item text-blue cur sk-transparent sk-text-34-4444-829 sk-text" data-id="1" style="border: none;">
-        教学楼
-      </view>
-      <view class="cu-item sk-transparent sk-text-34-4444-933 sk-text" data-id="2">
-        宿舍
-      </view>
-      <view class="cu-item sk-transparent sk-text-34-4444-363 sk-text" data-id="3">
-        餐饮
-      </view>
-      <view class="cu-item sk-transparent sk-text-34-4444-32 sk-text" data-id="4">
-        场馆
-      </view>
-      <view class="cu-item sk-transparent sk-text-34-4444-399 sk-text" data-id="5">
-        校门
-      </view>
-      <view class="cu-item sk-transparent sk-text-34-4444-349 sk-text" data-id="6">
-        服务
-      </view>
-    </scroll-view>
-    <view class="view-map">
-      <view show-location="true" id="map" include-points="[{&quot;latitude&quot;:39.9901910626,&quot;longitude&quot;:116.3559544086},{&quot;latitude&quot;:39.9908938643,&quot;longitude&quot;:116.3566142321},{&quot;latitude&quot;:39.9914651424,&quot;longitude&quot;:116.3561099768},{&quot;latitude&quot;:39.9912062184,&quot;longitude&quot;:116.3574832678},{&quot;latitude&quot;:39.9921925902,&quot;longitude&quot;:116.3556540012},{&quot;latitude&quot;:39.9921638212,&quot;longitude&quot;:116.35455966},{&quot;latitude&quot;:39.9910336019,&quot;longitude&quot;:116.3549512625}]" markers="[{&quot;id&quot;:200,&quot;latitude&quot;:39.9901910626,&quot;longitude&quot;:116.3559544086,&quot;callout&quot;:{&quot;content&quot;:&quot;主楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:201,&quot;latitude&quot;:39.9908938643,&quot;longitude&quot;:116.3566142321,&quot;callout&quot;:{&quot;content&quot;:&quot;教学楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:202,&quot;latitude&quot;:39.9914651424,&quot;longitude&quot;:116.3561099768,&quot;callout&quot;:{&quot;content&quot;:&quot;逸夫楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:203,&quot;latitude&quot;:39.9912062184,&quot;longitude&quot;:116.3574832678,&quot;callout&quot;:{&quot;content&quot;:&quot;实验楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:204,&quot;latitude&quot;:39.9921925902,&quot;longitude&quot;:116.3556540012,&quot;callout&quot;:{&quot;content&quot;:&quot;机电信息楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:205,&quot;latitude&quot;:39.9921638212,&quot;longitude&quot;:116.35455966,&quot;callout&quot;:{&quot;content&quot;:&quot;土木环境楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24},{&quot;id&quot;:206,&quot;latitude&quot;:39.9910336019,&quot;longitude&quot;:116.3549512625,&quot;callout&quot;:{&quot;content&quot;:&quot;理化楼&quot;,&quot;color&quot;:&quot;#0081ff&quot;,&quot;fontSize&quot;:10,&quot;bgColor&quot;:&quot;#ffffff&quot;,&quot;padding&quot;:2,&quot;display&quot;:&quot;ALWAYS&quot;,&quot;anchorY&quot;:6},&quot;iconPath&quot;:&quot;/images/location.png&quot;,&quot;width&quot;:24,&quot;height&quot;:24}]" class="sk-image">
+    <view class="sk-container">
+      <view class="sk-container">
+        <view class="sk-container">
+          <scroll-view class="bg-white nav" scroll-left="0" scroll-with-animation="true" scroll-x="true">
+            <view class="cu-item sk-transparent sk-text-34-4444-604 sk-text sk-image sk-text-34-4444-92 sk-text-34-4444-363" data-id="0">
+              院系
+            </view>
+            <view class="cu-item text-blue cur sk-transparent sk-text-34-4444-829 sk-text sk-image sk-text-34-4444-202 sk-text-34-4444-595" data-id="1" style="border: none;">
+              教学楼
+            </view>
+            <view class="cu-item sk-transparent sk-text-34-4444-933 sk-text sk-image sk-text-34-4444-488 sk-text-34-4444-242" data-id="2">
+              宿舍
+            </view>
+            <view class="cu-item sk-transparent sk-text-34-4444-363 sk-text sk-image sk-text-34-4444-730 sk-text-34-4444-432" data-id="3">
+              餐饮
+            </view>
+            <view class="cu-item sk-transparent sk-text-34-4444-32 sk-text sk-image sk-text-34-4444-621 sk-text-34-4444-604" data-id="4">
+              场馆
+            </view>
+            <view class="cu-item sk-transparent sk-text-34-4444-399 sk-text sk-image sk-text-34-4444-149 sk-text-34-4444-84" data-id="5">
+              校门
+            </view>
+            <view class="cu-item sk-transparent sk-text-34-4444-349 sk-text sk-image sk-text-34-4444-793 sk-text-34-4444-301" data-id="6">
+              服务
+            </view>
+          </scroll-view>
+          <view class="view-map">
+            <view class="sk-image" id="map">
+            </view>
+          </view>
+          <scroll-view class="bottomScroll" scroll-into-view="idundefined" scroll-top="0" scroll-y="true">
+            <view class="text-blue sk-transparent sk-text-14-2857-734 sk-text sk-image sk-text-14-2857-234 sk-text-14-2857-437" style="text-align: center; margin-top: 10px; background-position-x: 50%;">
+              点击卡片查看详情；点击右侧图标开启导航
+            </view>
+            <view class="post-container bg-blue light shadow" data-id="200" id="id200">
+              <view class="text-nav" data-id="200">
+                <text class="sk-transparent sk-text-14-2857-226 sk-text sk-image sk-text-14-2857-994 sk-text-14-2857-577">
+                  主楼
+                </text>
+              </view>
+              <view class="image-nav" data-id="200" data-latitude="39.9901910626" data-longitude="116.3559544086" data-name="主楼">
+                <image class="sk-image" style="width:100%; height:100%;">
+                </image>
+              </view>
+            </view>
+            <view class="post-container bg-blue light shadow" data-id="201" id="id201">
+              <view class="text-nav" data-id="201">
+                <text class="sk-transparent sk-text-14-2857-139 sk-text sk-image sk-text-14-2857-352 sk-text-14-2857-197">
+                  教学楼
+                </text>
+              </view>
+              <view class="image-nav" data-id="201" data-latitude="39.9908938643" data-longitude="116.3566142321" data-name="教学楼">
+                <image class="sk-image" style="width:100%; height:100%;">
+                </image>
+              </view>
+            </view>
+            <view class="post-container bg-blue light shadow" data-id="202" id="id202">
+              <view class="text-nav" data-id="202">
+                <text class="sk-transparent sk-text-14-2857-198 sk-text sk-image sk-text-14-2857-960 sk-text-14-2857-273">
+                  逸夫楼
+                </text>
+              </view>
+              <view class="image-nav" data-id="202" data-latitude="39.9914651424" data-longitude="116.3561099768" data-name="逸夫楼">
+                <image class="sk-image" style="width:100%; height:100%;">
+                </image>
+              </view>
+            </view>
+            <view class="post-container bg-blue light shadow" data-id="203" id="id203">
+              <view class="text-nav" data-id="203">
+                <text class="sk-transparent sk-text-14-2857-736 sk-text sk-image sk-text-14-2857-60 sk-text-14-2857-235">
+                  实验楼
+                </text>
+              </view>
+              <view class="image-nav" data-id="203" data-latitude="39.9912062184" data-longitude="116.3574832678" data-name="实验楼">
+                <image class="sk-image" style="width:100%; height:100%;">
+                </image>
+              </view>
+            </view>
+            <view class="post-container bg-blue light shadow" data-id="204" id="id204">
+              <view class="text-nav" data-id="204">
+                <text class="sk-transparent sk-text-14-2857-373 sk-text sk-image sk-text-14-2857-570 sk-text-14-2857-750">
+                  机电信息楼
+                </text>
+              </view>
+              <view class="image-nav" data-id="204" data-latitude="39.9921925902" data-longitude="116.3556540012" data-name="机电信息楼">
+                <image class="sk-image" style="width:100%; height:100%;">
+                </image>
+              </view>
+            </view>
+          </scroll-view>
+        </view>
       </view>
     </view>
-    <scroll-view scroll-y="true" class="bottomScroll" scroll-into-view="idundefined" scroll-top="0">
-      <view class="text-blue sk-transparent sk-text-14-2857-734 sk-text" style="text-align: center; margin-top: 10px; background-position-x: 50%;">
-        点击卡片查看详情；点击右侧图标开启导航
-      </view>
-      <view class="post-container bg-blue light shadow" data-id="200" id="id200">
-        <view class="text-nav" data-id="200">
-          <text class="sk-transparent sk-text-14-2857-226 sk-text">
-            主楼
-          </text>
-        </view>
-        <view class="image-nav" data-id="200" data-latitude="39.9901910626" data-longitude="116.3559544086" data-name="主楼">
-          <image style="width:100%; height:100%;" class="sk-image">
-          </image>
-        </view>
-      </view>
-      <view class="post-container bg-blue light shadow" data-id="201" id="id201">
-        <view class="text-nav" data-id="201">
-          <text class="sk-transparent sk-text-14-2857-139 sk-text">
-            教学楼
-          </text>
-        </view>
-        <view class="image-nav" data-id="201" data-latitude="39.9908938643" data-longitude="116.3566142321" data-name="教学楼">
-          <image style="width:100%; height:100%;" class="sk-image">
-          </image>
-        </view>
-      </view>
-      <view class="post-container bg-blue light shadow" data-id="202" id="id202">
-        <view class="text-nav" data-id="202">
-          <text class="sk-transparent sk-text-14-2857-198 sk-text">
-            逸夫楼
-          </text>
-        </view>
-        <view class="image-nav" data-id="202" data-latitude="39.9914651424" data-longitude="116.3561099768" data-name="逸夫楼">
-          <image style="width:100%; height:100%;" class="sk-image">
-          </image>
-        </view>
-      </view>
-      <view class="post-container bg-blue light shadow" data-id="203" id="id203">
-        <view class="text-nav" data-id="203">
-          <text class="sk-transparent sk-text-14-2857-736 sk-text">
-            实验楼
-          </text>
-        </view>
-        <view class="image-nav" data-id="203" data-latitude="39.9912062184" data-longitude="116.3574832678" data-name="实验楼">
-          <image style="width:100%; height:100%;" class="sk-image">
-          </image>
-        </view>
-      </view>
-      <view class="post-container bg-blue light shadow" data-id="204" id="id204">
-        <view class="text-nav" data-id="204">
-          <text class="sk-transparent sk-text-14-2857-373 sk-text">
-            机电信息楼
-          </text>
-        </view>
-        <view class="image-nav" data-id="204" data-latitude="39.9921925902" data-longitude="116.3556540012" data-name="机电信息楼">
-          <image style="width:100%; height:100%;" class="sk-image">
-          </image>
-        </view>
-      </view>
-    </scroll-view>
   </view>
 </template>

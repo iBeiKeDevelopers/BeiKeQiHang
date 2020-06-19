@@ -1,5 +1,6 @@
 /* pages/nav/nav.wxss */
 @import "../../colorui/animation.wxss";
+@import "./nav.skeleton.wxss";
 
 map {
   height: 100%;
@@ -29,6 +30,7 @@ map {
 .image-nav {
   width: 60rpx;
   height: 60rpx;
+  border-radius: 50%;
 }
 
 .text-nav {
