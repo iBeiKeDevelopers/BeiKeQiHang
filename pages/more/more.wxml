@@ -1,0 +1,24 @@
+<view class="margin-top text-blue" style="width:100vw;text-align:center;">点击卡片即可跳转</view>
+<view class="text-blue" style="width:100vw;text-align:center;">点击三点添加到我的小程序更方便哦～👆</view>
+
+<block wx:for="{{list}}" wx:key="*this">
+  <view class="cu-card article" style="margin-bottom:-30rpx;" bindtap="Go" data-appid="{{item.appid}}">
+    <view class="cu-item shadow">
+      <view class="title">
+        <view class="text-cut" style="text-align:left;">{{item.name}}</view>
+      </view>
+      <view class="content">
+        <image src="{{item.src}}" mode="aspectFill"></image>
+        <view class="desc">
+          <view class="text-content">{{item.info}}</view>
+          <navigator catchtap url="/pages/more/web/{{item.url}}" wx:if="{{item.url}}">
+            <view class="text-blue">了解更多 >>></view>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+<view class="text-gray" style="text-align:center;margin-top:20rpx;">copyright©2020-2021 All Rights Reserved.</view>
+<view class="text-gray" style="text-align:center;margin-bottom:20rpx;">校学生会iBeiKe团队</view>

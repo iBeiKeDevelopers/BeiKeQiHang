@@ -1,0 +1,4 @@
+@import "../guide.wxss";
+image {
+  margin-top: 30rpx;
+}

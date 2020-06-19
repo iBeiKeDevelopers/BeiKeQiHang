@@ -1,0 +1,37 @@
+<view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModal'?'show':''}}" bindtap="hideModal">
+  <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
+    <view class="cu-list menu text-left">
+      <view class="cu-item arrow" wx:for="{{items}}" wx:key bindtap="modalClick" data-target="{{item[1]}}" wx:key="{{item[1]}}">
+        <view class="content">
+          {{item[0]}}
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<text bindtap="showModal" class="cuIcon-list modal-button {{modalName=='DrawerModal'?'hidden':''}}"></text>
+<scroll-view scroll-y='true' class='scroll-view' scroll-into-view="{{scrollTo}}">
+  <view class="container">
+    <text class='title'>医疗报销</text>
+    <view class="content">
+    <para name="校医院工作时间" id='a1'>
+<text class="no-indent">1. 全年无休，24小时有医生接诊。</text>
+<text class="no-indent">2. 常规门诊时间：</text>
+<text><text class="hightlight">周一至周五 上午8：00——11：30</text></text>
+<text><text class="hightlight">下午14：00——17：30</text></text>
+<text class="no-indent">3. 延时门诊时间：</text>
+<text><text class="hightlight">周一至周五：17：30-20：00</text></text>
+<text class="no-indent">4. 双休日及法定节假日请到急诊值班室由值班医生负责接诊。</text>
+</para>
+<para name="关于药品" id='a2'>
+<text>校内外门诊医疗费用自负10%，校外住院医疗费用自负5%。</text>
+<text>校外有宝芝堂大药店、康寿安医药超市等正规场所购买药品，宝芝堂大药店位于志新东路14号（从东门出发穿过小区），康寿安医药超市位于志新东路78号（志新桥北侧），北京福仁堂医药经营部（北门出门、志新路中国石油探勘开发研究院），天宝堂平价大药房（学校西北肯德基旁边、学院路甲17号1栋）  </text>
+</para>
+<para name="医疗报销" id='a3'>
+<image src='https://ae01.alicdn.com/kf/Hd44f2b14efe04edf82f1f4e52508b84cL.png' data-src='https://ae01.alicdn.com/kf/Hd44f2b14efe04edf82f1f4e52508b84cL.png' mode='widthFix' bindtap="imgpreview"></image>
+<image src='https://ae01.alicdn.com/kf/H63380396ae794c4a9e4947232d16688fK.png' data-src='https://ae01.alicdn.com/kf/H63380396ae794c4a9e4947232d16688fK.png' mode='widthFix' bindtap="imgpreview"></image>
+</para>
+
+    </view>
+  </view>
+</scroll-view>

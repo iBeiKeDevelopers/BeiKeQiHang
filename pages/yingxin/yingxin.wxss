@@ -1,0 +1,27 @@
+@import "../../common";
+
+page {
+  background-image: url('https://ae01.alicdn.com/kf/H286d1ac1745e41ecb4155442e770cb34w.png');
+  background-size: 100% 100%;
+}
+
+.table {
+  font-size: 0;
+  width: 96%;
+  margin: 3rpx 0;
+  border-top: 4rpx solid #699cad;
+  border-bottom: 4rpx solid #699cad;
+  border-right: 2rpx solid #699cad;
+  border-left: 2rpx solid #699cad;
+}
+
+.table > view {
+  border: 2rpx solid #699cad;
+  display: inline-block;
+  width: 50%;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 32rpx;
+  margin-top:-1rpx;
+  margin-bottom:-1rpx;
+}

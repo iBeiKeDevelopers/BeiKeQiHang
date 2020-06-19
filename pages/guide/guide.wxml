@@ -1,0 +1,12 @@
+<web-view src="http://guide.ibeike.com/"></web-view>
+
+<!-- <scroll-view style='height:100vh'>
+  <view class="container1">
+    <view class="container2">
+    <image wx:for="{{[1,3,5,7]}}" src="/images/guide/gl-{{item}}.png" data-target="{{item}}" bindtap="goTo" wx:key imageHeight="213.516671595764"></image>
+    </view>
+    <view class="container2">
+    <image wx:for="{{[2,4,6,8]}}" src="/images/guide/gl-{{item}}.png" data-target="{{item}}" bindtap="goTo" wx:key imageHeight="213.516671595764"></image>
+    </view>
+  </view>
+</scroll-view> -->

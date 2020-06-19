@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "迎新报到",
+  "usingComponents": {
+    "para": "/component/Paragraph"
+  }
+}
