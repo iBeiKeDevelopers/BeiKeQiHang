@@ -1,4 +1,6 @@
-<view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModal'?'show':''}}" bindtap="hideModal">
+<web-view src="http://guide.ibeike.com/"></web-view>
+
+<!-- <view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModal'?'show':''}}" bindtap="hideModal">
   <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;height:calc(100vh - {{CustomBar}}px)">
     <view class="cu-list menu text-left">
       <view class="cu-item arrow" wx:for="{{items}}" wx:key="*this" bindtap="modalClick" data-target="{{item[1]}}">
@@ -235,4 +237,4 @@
       </para>
     </view>
   </view>
-</scroll-view>
+</scroll-view> -->

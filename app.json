@@ -1,5 +1,6 @@
 {
-  "pages":[
+  "pages": [
+    "pages/strategy/strategy",
     "pages/yingxin/yingxin",
     "pages/index/index",
     "pages/guide/guide",
@@ -9,15 +10,16 @@
     "pages/more/web/ieat",
     "pages/more/web/nty",
     "pages/more/web/schedule",
-    "pages/detail/detail"
+    "pages/detail/detail",
+    "pages/guide"
   ],
   "tabBar": {
     "color": "#8a8a8a",
     "selectedColor": "#0081ff",
     "list": [
       {
-        "pagePath": "pages/yingxin/yingxin",
-        "text": "迎新报到",
+        "pagePath": "pages/strategy/strategy",
+        "text": "贝壳攻略",
         "iconPath": "/images/tabbar/books1.png",
         "selectedIconPath": "/images/tabbar/books.png"
       },
@@ -53,11 +55,11 @@
     "wxe453a8892a468da8",
     "wx0116305024aa79ec"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "贝壳起航",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle": "black"
   },
   "usingComponents": {
     "Img": "/component/Image",
