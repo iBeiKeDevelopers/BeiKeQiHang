@@ -9,7 +9,11 @@ Page({
         ['入学考试', 'a4'],
         ['有关军训', 'a5']],
       CustomBar: app.globalData.CustomBar
-
+    },
+    onLoad: function (options) {
+      wx.showShareMenu({
+        withShareTicket: true
+      })
     },
     modalClick(e) {
       this.setData({

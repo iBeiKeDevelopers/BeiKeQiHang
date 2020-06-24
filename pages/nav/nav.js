@@ -4,7 +4,7 @@ var detailList = require('../../utils/data.js')
 Page({
   data: {
     loading: true,
-    TabCur: 1,
+    TabCur: 0,
     topScrollView: ['院系', '教学楼', '宿舍', '餐饮', '场馆', '校门', '服务'],
     latitude: 39.9913500000,
     longitude: 116.3607200000,

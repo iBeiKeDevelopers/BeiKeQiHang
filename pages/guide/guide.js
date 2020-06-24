@@ -4,6 +4,9 @@ Page({
     screenHeight: 1205
   },
   onLoad: function () {
+    wx.showShareMenu({
+      withShareTicket: true
+    })
     var height = 1205
     wx.getSystemInfo({
       success: function (res) {

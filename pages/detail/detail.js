@@ -1,66 +1,48 @@
 // pages/detail/detail.js
+var detailList = require('../../utils/data.js')
+
 Page({
-
-  /**
-   * 页面的初始数据
-   */
   data: {
-
+    id: 0,
+    latitude: 39.9913500000,
+    longitude: 116.3607200000,
+    detail: [],
+    screenHeight: 1205
   },
 
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+    wx.showShareMenu({
+      withShareTicket: true
+    })
+    var id = options.id;
+    this.setData({
+      id: id,
+      detail: detailList.listData[parseInt(id / 100 - 1)].list[id % 100],
+    });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
   onShow: function () {
+    var height = 1205
+    wx.getSystemInfo({
+      success: function (res) {
+        height = (res.screenHeight * 2) - 130
+      },
+    })
 
+    this.setData({
+      screenHeight: height
+    });
+  },
+  
+  goToNav: function () {
+    var id = this.data.id;
+    wx.openLocation({
+      latitude: detailList.listData[parseInt(id / 100 - 1)].list[id % 100].latitude,
+      longitude: detailList.listData[parseInt(id / 100 - 1)].list[id % 100].longitude,
+      scale: 18,
+      name: detailList.listData[parseInt(id / 100 - 1)].list[id % 100].title,
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  }
 })
+
