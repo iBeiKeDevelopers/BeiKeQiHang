@@ -20,8 +20,18 @@ Page({
     });
   },
   goTo: function (e) {
-    wx.navigateTo({
-      url: e.currentTarget.dataset.target + '/' + e.currentTarget.dataset.target,
+    var self = this
+    var target = e.currentTarget.dataset.target
+    self.setData({
+      animation: target
     })
+    wx.navigateTo({
+      url: target + '/' + target,
+    })
+    setTimeout(function() {
+      self.setData({
+        animation: ''
+      })
+    }, 1000)
   }
 })

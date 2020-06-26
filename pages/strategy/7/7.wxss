@@ -1,4 +1,4 @@
-@import "../strategy.wxss";
+@import "../common.wxss";
 image {
   margin-top: 30rpx;
 }
