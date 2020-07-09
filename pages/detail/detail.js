@@ -43,6 +43,7 @@ Page({
       name: detailList.listData[parseInt(id / 100 - 1)].list[id % 100].title,
     })
   },
-
+  onShareAppMessage: function () {},
+  onShareTimeline() {}
 })
 

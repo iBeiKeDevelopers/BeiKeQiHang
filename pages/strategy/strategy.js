@@ -7,6 +7,7 @@ Page({
     wx.showShareMenu({
       withShareTicket: true
     })
+    this.onShareTimeline()
     var height = 1205
     wx.getSystemInfo({
       success: function (res) {
@@ -33,5 +34,16 @@ Page({
         animation: ''
       })
     }, 1000)
-  }
+  },
+  onShareAppMessage: function (res) {
+    // if (res.from === 'button') {
+    //   // 来自页面内转发按钮
+    //   console.log(res.target)
+    // }
+    // return {
+    //   title: '自定义转发标题',
+    //   path: '/page/user?id=123'
+    // }
+  },
+  onShareTimeline: function (res) {}
 })

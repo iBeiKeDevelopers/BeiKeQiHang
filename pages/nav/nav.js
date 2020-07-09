@@ -90,6 +90,8 @@ Page({
       points: points,
       markers: markers
     })
-  }
+  },
+  onShareAppMessage: function () {},
+  onShareTimeline() {}
 
 })

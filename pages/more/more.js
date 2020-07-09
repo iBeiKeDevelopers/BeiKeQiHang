@@ -40,6 +40,7 @@ Page({
       appId: e.currentTarget.dataset.appid,
       fail: console.error
     })
-  }
-
+  },
+  onShareAppMessage: function () {},
+  onShareTimeline() {}
 })

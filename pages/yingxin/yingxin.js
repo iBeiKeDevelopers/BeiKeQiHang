@@ -35,4 +35,6 @@ Page({
         modalName: null
       })
     },
+    onShareAppMessage: function (res) {},
+    onShareTimeline() {}
 });

@@ -2,7 +2,6 @@
   "pages": [
     "pages/strategy/strategy",
     "pages/yingxin/yingxin",
-    "pages/index/index",
     "pages/guide/guide",
     "pages/nav/nav",
     "pages/vr/vr",
@@ -10,8 +9,7 @@
     "pages/more/web/ieat",
     "pages/more/web/nty",
     "pages/more/web/schedule",
-    "pages/detail/detail",
-    "pages/guide"
+    "pages/detail/detail"
   ],
   "tabBar": {
     "color": "#8a8a8a",
